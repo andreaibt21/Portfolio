@@ -1,0 +1,13 @@
+.container {
+  height: 100vh;
+
+  .grid {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 200px 200px 200px;
+    // grid-row-gap: 10px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+}
