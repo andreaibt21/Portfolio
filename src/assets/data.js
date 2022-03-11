@@ -4,7 +4,7 @@ export const data = [
     tools: "HTML, JavaScript, CSS, Wordpress",
     code: "https://github.com/andreaibt21/React-quiz",
     live: "https://widexcorp.ca/",
-    key: 1,
+    key: 0,
     img: "assets/widexcorp.PNG", 
   }, {
     title: "REACT QUIZ",

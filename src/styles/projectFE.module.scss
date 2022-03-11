@@ -1,24 +1,12 @@
 
-
 // --------------------------------------------
 :root {
-  --ff-primary: "Source Sans Pro", sans-serif;
-  --ff-secondary: "Source Code Pro", monospace;
-
   --fw-regular: 300;
   --fw-bold: 900;
 
   --clr-light: #fff;
-  --clr-dark: #303030;
+  // --clr-dark: #303030;
   --clr-accent: #a6d3a0;
-
-  --fs-h1: 3rem;
-  --fs-h2: 2.25rem;
-  --fs-h3: 1.25rem;
-  --fs-body: 1rem;
-
-  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
-    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
 
@@ -29,11 +17,12 @@
 
 .portfolio__item {
   background: rgba(0, 0, 0, 0.7);
-  -webkit-box-shadow: inset 0px 0px 65px 66px rgba(0,0,0,0.75);
-  -moz-box-shadow: inset 0px 0px 65px 66px rgba(0,0,0,0.75);
-  box-shadow: inset 0px 0px 65px 66px rgba(0,0,0,0.75);
+  // -webkit-box-shadow: inset 0px 0px 65px 66px rgba(0,0,0,0.75);
+  // -moz-box-shadow: inset 0px 0px 65px 66px rgba(0,0,0,0.75);
+  // box-shadow: inset 0px 0px 65px 66px rgba(0,0,0,0.75);
   overflow: hidden;
   position: relative;
+  border-radius: 5px;
 }
 
 .portfolio__description {
@@ -42,19 +31,19 @@
   position: absolute;
   margin: 8% auto;
   // padding: 1em;
-  font-size: var(--fs-h3);
-  font-weight: var(--fw-bold);
+  font-size: 25px;
+  //font-weight: var(--fw-bold);
   color: var(--clr-light);
 
 }
 
 .underline {
-  padding-bottom: 0.5rem;
+  padding-bottom: 3px;
   border-bottom: 2px var(--clr-accent) solid;
 }
 
 .technologies {
-  font-size: var(--fs-body);
+  font-size: 1rem;
   font-weight: var(--fw-regular);
 }
 .portfolio__links a {
@@ -74,7 +63,7 @@
 .portfolio__links {
   position: absolute;
   z-index: 2;
-  bottom: 15px;
+  bottom: 23px;
   left: 0;
   right: 0;
   margin-left: auto;

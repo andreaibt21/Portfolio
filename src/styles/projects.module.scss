@@ -1,13 +1,42 @@
 .container {
   height: 100vh;
+  h1{
+    color: black
+  }
+  .button_container{
+    display: flex;
+   justify-content: space-evenly; 
+   margin: 30px;
+   &>button{
+     background-color: transparent;
+     border-radius: 10px;
+     font-size: 20px;
+     border: none;
+     color: rgb(65, 65, 65);
+     padding: 3px 5px;
+     width: 130px;
+     &:hover{
+       background-color: rgba(0, 0, 0, 0.418);
+       color: white;
+      }
+    }
+    .button_selected{
+      // font-weight: 600;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.418);
+
+   }
+  }
+
 
   .grid {
     display: grid;
     grid-template-columns: 400px 400px 400px;
     grid-template-rows: 200px 200px 200px;
-    // grid-row-gap: 10px;
+    grid-gap: 3px;
     margin: 0;
     padding: 0;
     justify-content: center;
+
   }
 }
