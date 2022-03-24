@@ -6,7 +6,7 @@ import ProjectFE from "./ProjectFE";
 import ProjectBE from "./ProjectBE";
 
 function Projects() {
-  const [type, setType] = useState("back");
+  const [type, setType] = useState("front");
 
   const [openTab, setOpenTab] = useState(0);
 

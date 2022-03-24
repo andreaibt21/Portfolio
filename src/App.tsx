@@ -8,7 +8,7 @@ import styles from "./styles/app.module.scss";
 
 function App() {
   const squares = [];
-  for (let i = 0; i <= 30; i++) squares.push(<li key={i}></li>);
+  for (let i = 0; i <= 50; i++) squares.push(<li key={i}></li>);
 
   return (
     <div className={styles.app}>

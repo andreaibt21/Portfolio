@@ -24,24 +24,24 @@
   width: 25px;
   height: 25px;
   background: rgba(255, 255, 255, 0.2);
-  animation: animate 20s linear infinite;
+  animation: animate 6s linear infinite;
   bottom: 0;
   z-index: -1;
 }
 
-@for $i from 1 through 30 {
+@for $i from 1 through 50 {
   $num: random(150);
-  $left: random(1300); 
+  $left: random(100); 
   $bottom: random(100);
   $opacity: random(100);
 
   .box_area li:nth-child(#{$i}) {
     opacity: 0;
-    left: $left + 50px; 
+    left: $left + 0%; 
     bottom: $bottom + 0%;
     width: $num + 0px;
     height: $num + 0px;
-    animation-delay: random(3) + 0s;
+    animation-delay: random(10) + 0s;
     z-index: -1;
   }
 }
@@ -50,12 +50,11 @@
   0% {
     transform: translateY(0) rotate(0deg);
   }
-  50% {
-    transform: translateY(-1400px) rotate(360deg);
+  25% {
     opacity: 1;
   }
   100% {
-    transform: translateY(-2800px) rotate(180deg);
+    transform: translateY(-400px) rotate(360deg);
     opacity: 0;
   }
 }
