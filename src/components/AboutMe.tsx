@@ -1,22 +1,30 @@
 import React from "react";
 import styles from "../styles/aboutMe.module.scss";
 import foto from "../assets/foto1.jpg";
+
 function AboutMe() {
   return (
-    <div className={styles.container_AboutMe}>
+    <div id="AboutMe" className={styles.container_AboutMe}>
       <h1>ABOUT ME </h1>
       <section>
-        <p>
-          Texto muy bueno sobre mi background Texto muy bueno sobre mi
-          background Texto muy bueno sobre mi background Texto muy bueno sobre
-          mi background Texto muy bueno sobre mi background Texto muy bueno
-          sobre mi background. {"\n"}
-          Texto muy bueno sobre mi background Texto muy bueno sobre mi
-          background Texto muy bueno sobre mi background Texto muy bueno sobre
-          mi background Texto muy bueno sobre mi background Texto muy bueno
-          sobre mi background.
-        </p>
-        <img className={styles.foto} src={foto} alt="" />
+        <div className={styles.text_AboutMe}>
+          <p>
+            Hello! I enjoy doing front end projects but I also have some back
+            end skills. My biggest strengths come about finding solutions that
+            the final user will see. Front end is great because I get the
+            opportunity to solve both logic and design problems, which makes
+            motives me.
+          </p>
+          <p>
+            I got started in software development in 2020, learning by myself
+            with free platforms on the internet; then, when I had the chance, I
+            joined college. Now I have one year left to graduate 😊
+          </p>
+        </div>
+        <div className={styles.shape}>
+          <div className={styles.shape2}></div>
+          <img className={styles.shape} src={foto} alt="" />
+        </div>
       </section>
     </div>
   );

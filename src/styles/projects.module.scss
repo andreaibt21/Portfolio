@@ -1,42 +1,74 @@
 .container {
-  height: 100vh;
-  h1{
-    color: black
+  h1 {
+    padding-top: 70px;
+    color: black;
   }
-  .button_container{
+  .button_container {
     display: flex;
-   justify-content: space-evenly; 
-   margin: 30px;
-   &>button{
-     background-color: transparent;
-     border-radius: 10px;
-     font-size: 20px;
-     border: none;
-     color: rgb(65, 65, 65);
-     padding: 3px 5px;
-     width: 130px;
-     &:hover{
-       background-color: rgba(0, 0, 0, 0.418);
-       color: white;
+    justify-content: space-evenly;
+    margin: 30px;
+    margin-bottom: 50px;
+    & > button {
+      font-weight: 400;
+      background-color: transparent;
+      border-radius: 10px;
+      font-size: 20px;
+      border: none;
+      padding: 3px 5px;
+      width: 130px;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.418);
+        cursor: pointer;
+        color: white;
+        transition: 0.8s;
       }
     }
-    .button_selected{
-      // font-weight: 600;
-    color: black;
-    background-color: rgba(0, 0, 0, 0.418);
-
-   }
+    .button_selected {
+      color: white;
+      background-color: rgba(0, 0, 0, 0.418);
+    }
   }
-
 
   .grid {
     display: grid;
-    grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(3, 0.9fr);
+
     grid-gap: 3px;
     margin: 0;
     padding: 0;
     justify-content: center;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .container {
+    .grid {
+      grid-template-columns: repeat(2, 0.4fr);
+      grid-template-rows: repeat(5, 0.9fr);
+      grid-gap: 20px;
+    }
+  }
+}
+@media only screen and (max-width: 700px) {
+  .container {
+    .grid {
+      grid-template-columns: repeat(1, 0.8fr);
+      grid-template-rows: repeat(9, 0.7fr);
+    }
+  }
+}
+@media only screen and (max-width: 550px) {
+  .container {
+    .grid {
+      grid-template-rows: repeat(9, 0.8fr);
+    }
+  }
+}
 
+@media only screen and (max-width: 400px) {
+  .container {
+    .grid {
+      grid-template-rows: repeat(9, 1fr);
+    }
   }
 }

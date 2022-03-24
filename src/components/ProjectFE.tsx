@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../styles/projectFE.module.scss";
 
 interface Props {
@@ -20,23 +19,25 @@ function Project(props: Props) {
         <br />
       </p>
       <div className={styles.portfolio__links}>
-        <a
-          className={styles.portfolio__link}
-          href={props.code}
-          target="_blank"
-          rel="noreferrer"
-        >
-          {/* <i className={styles.fab fa-codepen}></i> */}
-          code
-        </a>
+        {props.code !== "" ? (
+          <a
+            className={styles.portfolio__link}
+            href={props.code}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Code
+          </a>
+        ) : (
+          ""
+        )}
         <a
           className={styles.portfolio__link}
           href={props.live}
           target="_blank"
           rel="noreferrer"
         >
-          {/* <i className={styles.fas fa-external-link-alt}></i> */}
-          live
+          Live
         </a>
       </div>
       <img

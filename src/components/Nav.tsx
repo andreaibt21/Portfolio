@@ -1,16 +1,12 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import styles from "../styles/nav.module.scss";
 const Nav = () => {
   return (
-
-        <nav className={styles.nav}>
-          <Link to="">HOME</Link>
-          <Link to="/Aboutme">ABOUT ME</Link>
-          <Link to="">PROYECTS</Link>
-          <Link to="">CONTACT</Link>
-        </nav>
- 
+    <nav className={styles.nav}>
+      <a href="#Home">HOME</a>
+      <a href="#AboutMe">ABOUT ME</a>
+      <a href="#Projects">PROYECTS</a>
+      <a href="#Contact">CONTACT</a>
+    </nav>
   );
 };
 

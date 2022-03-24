@@ -2,7 +2,7 @@ export const data = [
   {
     title: "WIDEXCORP",
     tools: "HTML, JavaScript, CSS, Wordpress",
-    code: "https://github.com/andreaibt21/React-quiz",
+    code: "",
     live: "https://widexcorp.ca/",
     key: 0,
     img: "assets/widexcorp.PNG", 
@@ -16,7 +16,7 @@ export const data = [
   },
   {
     title: "AMAZON CLONE",
-    tools: "Firebase, React, React-Router, Context, CSS",
+    tools: "React, Router, Context, CSS, Firebase",
     code: "https://github.com/andreaibt21/Amazon-clone",
     live: "https://amzon-clone-andrea.web.app/",
     key: 2,

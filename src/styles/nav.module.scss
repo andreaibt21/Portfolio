@@ -1,28 +1,34 @@
-najv {
-    position: fixed;
-    top: 0;
-    right: 0;
-    display: flex;
-    justify-content: flex-end;
-
-    a {
-        color: white;
-        padding: 20px;
-        text-decoration: none;
-    }
-
-}
 .nav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    display: flex;
-    justify-content: flex-end;
+  position: fixed;
+  width: 100vw;
+  z-index: 5000;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  scroll-behavior: smooth;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 1px;
 
-    a {
-        color: white;
-        padding: 20px;
-        text-decoration: none;
+  a {
+    scroll-behavior: smooth;
+    color: white;
+    padding: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.589);
+      transition: 0.8s;
     }
+  }
+}
 
+@media only screen and (max-width: 500px) {
+  .nav {
+    justify-content: center;
+    a {
+      padding: 20px 10px;
+    }
+  }
 }

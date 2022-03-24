@@ -1,54 +1,76 @@
-import React from "react";
-import { useState } from "react";
 import styles from "../styles/ProjectBE.module.scss";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDownRounded";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUpRounded";
+
 interface Props {
   title: string;
-  key: number;
+  id: number;
   open: boolean;
   content: string;
   tools: string;
+  img: string;
+  link: string;
+  openTab: number;
+  setOpenTab: (openTab: number) => void;
 }
 function BackEnd3(props: Props) {
-  const [openTab, setOpenTab] = useState(false);
-
   function handleClick() {
-    setOpenTab(!openTab);
-    console.log(openTab);
+    props.setOpenTab(props.id);
+    if (props.openTab === props.id) {
+      props.setOpenTab(0);
+    }
   }
 
-  const sections = (
-    <div key={props.key}>
+  // console.log("openTab", props.openTab);
+  // console.log("id", props.id);
+
+  return (
+    <div className={styles.accordion}>
       <div className={styles.title} onClick={handleClick}>
-        <div className={styles.arrow_wrapper}>
-          {openTab ? <KeyboardArrowDownIcon aria-label="open" /> : <KeyboardArrowUpIcon  aria-label="close"/>}
-          <i
-            className={
-              openTab ? "fa fa-angle-down fa-rotate-180" : "fa fa-angle-down"
-            }
-          ></i>
-        </div>
         <span className={styles.title_text}>{props.title}</span>
+
+        {props.openTab === props.id ? (
+          <KeyboardArrowDownIcon aria-label="open" />
+        ) : (
+          <KeyboardArrowUpIcon aria-label="close" />
+        )}
       </div>
 
-      <div className={openTab ? styles.content_opened : styles.content}>
+      <div
+        className={
+          props.openTab === props.id ? styles.content_opened : styles.content
+        }
+      >
         <div
-          className={openTab ? styles.content_text_openn : styles.content_text}
+          className={
+            props.openTab === props.id
+              ? styles.content_text_opened
+              : styles.content_text
+          }
         >
-
-          <p>Using: {props.tools}</p>
           <p>{props.content}</p>
+          <p>Using: {props.tools}</p>
+          {props.img !== "" ? (
+            <img
+              src={props.img}
+              alt={props.title + "'s program demostration"}
+              className={styles.img_gif}
+            />
+          ) : (
+            ""
+          )}
+          <a
+            href={props.link}
+            className={styles.link}
+            target="_blank"
+            rel="noreferrer"
+          >
+            code
+          </a>
         </div>
       </div>
     </div>
   );
-  return <div className={styles.accordion}>{sections}</div>;
 }
 
 export default BackEnd3;
-
-// ReactDOM.render(
-//   <App />,
-//   document.getElementById('accordion')
-// );
