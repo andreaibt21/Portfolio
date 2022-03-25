@@ -1,8 +1,23 @@
 import React from "react";
 import styles from "../styles/aboutMe.module.scss";
 import foto from "../assets/foto1.jpg";
+import { imageListClasses } from "@mui/material";
 
 function AboutMe() {
+  const skills: string[] = [
+    "html",
+    "css",
+    "js",
+    "react",
+    "materialui",
+    "vue",
+    "sass",
+    "bootstrap",
+    "typescript",
+    "csharp",
+    "sql",
+  ];
+
   return (
     <div id="AboutMe" className={styles.container_AboutMe}>
       <h1>ABOUT ME </h1>
@@ -20,6 +35,11 @@ function AboutMe() {
             with free platforms on the internet; then, when I had the chance, I
             joined college. Now I have one year left to graduate 😊
           </p>
+          <div className={styles.skills}>
+            {skills.map((e) => (
+              <img key={e} src={"../assets/" + e + ".png"} alt={e + " logo"} />
+            ))}
+          </div>
         </div>
         <div className={styles.shape}>
           <div className={styles.shape2}></div>

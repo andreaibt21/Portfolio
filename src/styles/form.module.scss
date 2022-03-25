@@ -5,6 +5,9 @@
   flex-direction: column;
   align-items: center;
 
+  .label {
+    font-weight: bolder;
+  }
   .mail,
   .textarea {
     width: 80%;
@@ -18,6 +21,7 @@
     background-color: transparent;
     color: black;
     font-size: 16px;
+    font-weight: bolder;
   }
   .mail::placeholder,
   .textarea::placeholder {
@@ -42,6 +46,7 @@
     width: 130px;
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.418);
+    font-weight: bolder;
 
     &:hover {
       color: white;

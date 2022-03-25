@@ -18,7 +18,7 @@ function Form() {
         <CircularProgress color="secondary" />
       ) : (
         <form onSubmit={handleSubmit}>
-          <label htmlFor="email">Send an email!</label>
+          <label className={styles.label} htmlFor="email">Send an email!</label>
           <input
             id="email"
             type="email"
