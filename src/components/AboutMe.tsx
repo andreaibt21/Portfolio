@@ -27,8 +27,7 @@ function AboutMe() {
             Hello! I enjoy doing front end projects but I also have some back
             end skills. My biggest strengths come about finding solutions that
             the final user will see. Front end is great because I get the
-            opportunity to solve both logic and design problems, which makes
-            motives me.
+            opportunity to solve both logic and design problems, which motivates me.
           </p>
           <p>
             I got started in software development in 2020, learning by myself
