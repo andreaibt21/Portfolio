@@ -1,7 +1,5 @@
-import React from "react";
 import styles from "../styles/aboutMe.module.scss";
 import foto from "../assets/foto1.jpg";
-import { imageListClasses } from "@mui/material";
 
 function AboutMe() {
   const skills: string[] = [
