@@ -29,8 +29,8 @@ function AboutMe() {
           </p>
           <p>
             I got started in software development in 2020, learning by myself
-            with free platforms on the internet; I started working at <a target="_blank" href="https://widexcorp.ca/">Widexcorp c.a.</a>
-            as FrontEnd developer and since 2022 I work for  <a target="_blank" href="https://ar.nttdata.com/about-us">NTT DATA</a> as Fullstak developer. 
+            with free platforms on the internet; I started working at <a rel="noreferrer" target="_blank" href="https://widexcorp.ca/">Widexcorp c.a.</a>
+            as FrontEnd developer and since 2022 I work for  <a rel="noreferrer" target="_blank" href="https://ar.nttdata.com/about-us">NTT DATA</a> as Fullstak developer. 
             Now I have one year left to graduate 😊 This website is owned and operated by Andrea Briceño.
           </p>
           <div className={styles.skills}>
